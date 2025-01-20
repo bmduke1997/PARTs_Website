@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { QRCode } from 'qrcode';
+
 
 @Component({
   selector: 'app-qr-generator',
@@ -8,5 +10,9 @@ import { Component } from '@angular/core';
   styleUrl: './qr-generator.component.scss'
 })
 export class QrGeneratorComponent {
+  @Input()
+  set Data(s: string) {
+
+  }
 
 }
